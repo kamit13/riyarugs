@@ -37,6 +37,7 @@ public class ProductController {
 		productService.createProduct(product);
 		return new ResponseEntity<>(HttpStatus.CREATED);
 		} catch(Exception e) {
+			
 			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 		}
 	}
